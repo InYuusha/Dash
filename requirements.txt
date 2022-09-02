@@ -3,3 +3,7 @@ plotly
 scikit-image
 pandas
 gunicorn
+firebase_admin
+firebase
+pyrebase
+functools

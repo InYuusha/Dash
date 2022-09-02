@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "flixdrop-de530",
+  "private_key_id": "a7754000bd2f81e01323f1df4e19b627197b7f42",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCZyEpdXQUDDWnx\nFv2bpQx+kZcofjl+Be0TJRLVEQZU4xKqL0CbTCgH9ovY5zc4jDhjp59KWnuylnX2\ntMmjcErtgOzBmaVZmdBeHak0JtSQKzn98M87CfIt98lBk5JnlorZoc90As8+rGJo\nIPjeyG1mPZf1rfwFQ1F+GAc89hYLhg0hCI25slR2jNo0MqG84hW70uVgNcr1en+Q\ncIYGJjZzJP7Kb7NQmOhG/zndTs5rWF2yXhNPU5w2TiGUMubsNRZq7CXsHuif0eA9\nPntLFaKOY+qTyso632MJXR06ch5x64t5I4DoL7F28/WN1jYDidS4qwsjXxQ7d8N7\nS+FFpS7TAgMBAAECggEAMh/sSVFEDHInWXt+b2iVUX4AEKVP9QlWdHqNkGBruWiI\nUWt0egoRNENC4xC+WZKu4KCm1ZP3pMbRLXhRDxJPgemXgiUkFbgCiGLPn52WhGVq\nkiCXU22TADO3aEYDHvudR4Gr/mraBVon+zvgErGuovgpm105+7ctDVYkqdSma9uk\n6WOq1vDIY2GfDKZcBtVW2WA6xnfkU1EE6+JkISqOYY8hcZKRUG1jGmbLE/8FYotJ\n/IHz577rdF8frYb4EqtE3CJx7hHiGOCrE6FLy7HNvuvQDfi7c/cE/R4uLtLbClHE\nklchCxyv6t8JorFHjn9x0x20VJBltMgBIMbs1dCdsQKBgQDNNQkSbKGZFc19Qg2P\nC3FVq7JJ4h2+ImaokjTdcZViFKbJ5L0JExXIEhZBAc4hiYlddN0ZAklE+YliXTLL\nhQd4LFH5K+aL7Aq1OSha4OJ5AO5BlGbYTfrZOiGt34J8avrY1THAQor0luuCo7CC\nupYDIlnGGXCiJfsStgSLzumIIwKBgQC/2LhxVDNSAUymv0dxB77/ra0peQRCvSRv\nX4E+lelncAODOTEIlGzPl3aSRoCOkTscHi2LgT1Uv0Z5nWvissCXfJMjqqs6e/uD\n9X3BM179OfWLKNu0LK3IfbhCMVtDspLsRWF7ftYCqIXYYcSyieN/lbAc9FnnjoND\n0bAIQkRRkQKBgGfpLTjZLVM5iR6ebgM7Rh6dnOBw0aLQBK/jqUVhGMXbs0GUxGxt\n75+qGP6+DUVKQfbDEJpzX+q/eWQH0YrhSBEAUFoectXzptBxqw+pxMSFRiCLJzDs\n+9M37on/HjImcfOOsWyrxXVpXsR+YwkvtnrL0C3SAAj7tpGY/eBV3EeFAoGAanUJ\njKHLxLLB5Tn5m+hPfbPThlMIITyyDjdyEdfAaEzJNjUzV259nwiOnIcQ6Yv/wA+i\n+GnkLbXilrPbXTYSFz3irIUVdWO9YzGD8gTerihOcEVg/W9ZlArnh5u56CwcyY2K\nlawBeAIqG7PNIcHQg0j+LGMPzKXRg33FcB/Np3ECgYBLuGZwRebAEyCMFGE+sI5I\nrXzyyMFT5uDnU5e6HiL5UmxGdzhd1lFu6VmzgjqeBGtyKujJ2c4b2y9nrER3sLUE\nhgTAdsflcvCw9OJ15xt31xX0b2QI77mKtKlbO62QYFRRnyxKb1T3E/oa0eDUGvc4\nAfDAzdvBUqYXSg+BaDR6Zg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-gz80j@flixdrop-de530.iam.gserviceaccount.com",
+  "client_id": "109673018837226609926",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-gz80j%40flixdrop-de530.iam.gserviceaccount.com"
+}

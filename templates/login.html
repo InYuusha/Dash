@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="stylesheet" href="Assets/Style/Login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!--Your website's icon-->
+    <link rel="icon" href="Assets/Images/login.jpg">
+    
+    <!--Your webiste's font source link-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    {% if msg%}
+    <span>{{msg}}</span>
+    {% endif %}
+    <!--Page title-->
+    <title>Log-in</title>
+
+  </head>
+
+  <!--background image-->
+  <body style="background-image: url('Assets/Images/programmer.gif')">
+
+    <div class="main">
+      <h2 class="login">Log-in</h2>
+
+      <form action="http://127.0.0.1:5000/login" method="post">
+        <label for="email">E-mail:</label><br />
+        <input
+          type="email"
+          id="e-mail"
+          name="email"
+          placeholder="Someone@example.com"
+          onclick="this.value=''"
+        /><br />
+
+        <label for="Password">Password:</label><br />
+        <input
+          type="text"
+          id="Password"
+          name="password"
+          onfocus="this.value=''"
+          placeholder="Password"
+        /><br />
+        <input type="submit" value="Login"></input>
+      </form>
+
+
+      <p class="signup_link">
+        Don’t have an account yet? <a href="/signup">Sign-up.</a>
+      </p>
+
+    </div>
+  </body>
+</html>

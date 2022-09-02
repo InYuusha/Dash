@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href= "Assets/Images/signup.png">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="Assets/Style/SignUp.css">
+    <title>Sign-Up</title>
+</head>
+<body>
+
+
+<!--background image-->
+<body style="background-image: url('Assets/Images/programmer.gif')">
+
+  <div class="main">
+    {% if msg %}
+    <span>{{msg}}</span>
+    {% endif %}
+    <h2 class="Signup">Sign-Up</h2>
+
+    
+    <form action="http://127.0.0.1:5000/signup" method="post">
+      <label for="E-mail">E-mail:</label><br />
+      <input
+        required=""
+        type="email"
+        id="Email"
+        name="email"
+        onfocus="this.value=''"
+        placeholder="Email"
+      /><br />
+
+      <label for="password">Password:</label><br />
+      <input
+        required=""
+        type="text"
+        id="password"
+        name="password"
+        onfocus="this.value=''"
+        placeholder="Password"
+      /><br>
+
+      <label for="confirm-password">Confirm  Password:</label><br />
+      <input
+        required=""
+        type="text"
+        id="confirm-Password"
+        name="confirmPassword"
+        onfocus="this.value=''"
+        placeholder="Confirm-password"
+      /><br>
+      <input type="submit" value="Signup"></input>
+    </form>
+
+    <p class="signup_link">
+      Already have an account? <a href="/login">Log-in.</a>
+    </p>
+
+
+  </div>
+</body>
+</html>
+  
+</body>
+</html>
