@@ -1,68 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href= "Assets/Images/signup.png">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="Assets/Style/SignUp.css">
-    <title>Sign-Up</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block main %}
+<div class="row mt-5">
+  <div class="col-md-6 m-auto">
+      <div class="card card-body" id="register-card">
+          <h1 class="text-center"><i class="fas fa-user-plus"></i>Register</h1>
+
+              {% if(err_msg) %}
+              <span class="badge rounded-pill text-light badge-danger my-1"><i class="fas fa-window-close"></i><label class='mx-2'>{{err_msg}}</label></span>
+              {% endif %}
+
+              {% if(success_msg) %}
+              <span class="badge rounded-pill bg-success text-light">{{success_msg}}</span>
+
+            {% endif %}
 
 
-<!--background image-->
-<body style="background-image: url('Assets/Images/programmer.gif')">
+          <form action="/signup" method="post">
+              
 
-  <div class="main">
-    {% if msg %}
-    <span>{{msg}}</span>
-    {% endif %}
-    <h2 class="Signup">Sign-Up</h2>
-
-    
-    <form action="http://127.0.0.1:5000/signup" method="post">
-      <label for="E-mail">E-mail:</label><br />
-      <input
-        required=""
-        type="email"
-        id="Email"
-        name="email"
-        onfocus="this.value=''"
-        placeholder="Email"
-      /><br />
-
-      <label for="password">Password:</label><br />
-      <input
-        required=""
-        type="text"
-        id="password"
-        name="password"
-        onfocus="this.value=''"
-        placeholder="Password"
-      /><br>
-
-      <label for="confirm-password">Confirm  Password:</label><br />
-      <input
-        required=""
-        type="text"
-        id="confirm-Password"
-        name="confirmPassword"
-        onfocus="this.value=''"
-        placeholder="Confirm-password"
-      /><br>
-      <input type="submit" value="Signup"></input>
-    </form>
-
-    <p class="signup_link">
-      Already have an account? <a href="/login">Log-in.</a>
-    </p>
-
-
+              <div class="form-group mb-3">
+                  <label class="form-label" >Email</label>
+                  <input class="form-control" name="email" value="email" type="text" placeholder="Enter Email">
+              </div>
+              <div class="form-group mb-3">
+                  <label class="form-label" >Password</label>
+                  <input class="form-control" name="password" type="password" placeholder="Create a Password">
+              </div>
+              <div class="form-group mb-3">
+                  <label class="form-label" >Confirm Password</label>
+                  <input class="form-control" name="confirmPassword" type="password" placeholder="Confirm Password">
+              </div>
+              <div class="form-group mb-3">
+                  <button type="submit" class="btn btn-secondary form-control">Register</button>
+              </div>
+          </form>
+          <p>Have an account ? <a href="login">Login</a></p>
+      </div>
   </div>
-</body>
-</html>
-  
-</body>
-</html>
+</div>
+
+{% endblock %}

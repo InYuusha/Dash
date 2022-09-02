@@ -249,4 +249,5 @@ def create_dash(server):
                 ind_image,
                 json.dumps(shapes))
 
+    
 

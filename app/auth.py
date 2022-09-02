@@ -33,8 +33,12 @@ def auth_routes(app):
     def signup():
         if request.method=='GET':
             return render_template('signup.html')
+            
         email = request.form["email"]
         password = request.form["password"]
+        confirmPassword = request.form["confirmPassword"]
+        if password != confirmPassword:
+            return render_template('signup.html', err_msg='Password do not match')
         try:
         #create the user
             auth.create_user_with_email_and_password(email, password);
@@ -45,10 +49,10 @@ def auth_routes(app):
             user_email = email
             session['usr'] = user_id
             session["email"] = user_email
-            return render_template('login.html', msg='Successfully created user')
+            return render_template('login.html', success_msg='Successfully created user')
         except Exception as e:
             print(e)
-            return render_template('signup.html', msg='Failed to register')
+            return render_template('signup.html', err_msg='Failed to register')
 
     @app.route('/login',methods=['POST','GET'])
     def token():
@@ -58,7 +62,7 @@ def auth_routes(app):
         email = request.form.get('email')
         password = request.form.get('password')
         if email is None or password is None:
-            return render_template('login.html', msg='Missing Fields')
+            return render_template('login.html', err_msg='Missing Fields')
         try:
             user = auth.sign_in_with_email_and_password(email, password)
 
@@ -71,7 +75,7 @@ def auth_routes(app):
             
         except HTTPError as e:
             print(e)
-            return render_template('login.html', msg="Invalid credentials")
+            return render_template('login.html', err_msg="Invalid credentials")
 
 
     @app.route("/logout")
