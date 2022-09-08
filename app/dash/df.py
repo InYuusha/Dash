@@ -43,6 +43,7 @@ def draw_circle(center, radius, n_points=50):
     for k in range(1, x.shape[0]):
         path += ' L ' + str(x[k]) + ',' + str(y[k])
     path += ' Z'
+    print(path)
     return path
 
 
@@ -250,4 +251,4 @@ def create_dash(server):
                 json.dumps(shapes))
 
     
-
+    return app;
